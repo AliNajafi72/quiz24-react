@@ -2,7 +2,8 @@ import React from 'react';
 import './admin-panel-home-page.scss';
 import SideIconBar from "../../../components/side-icon-bar-component/side-icon-bar-component";
 import Grid from "@material-ui/core/Grid";
-import TopProfileBar from "../../../components/top-profile-bar/top-profile-bar";
+import TopProfileBarComponent from "../../../components/top-profile-bar-component/top-profile-bar-component";
+import MetricChart from "../../../components/metric-chart-component/mertic-chart-component";
 
 class AdminPanelHomePage extends React.Component {
     iconBarColor;
@@ -19,15 +20,13 @@ class AdminPanelHomePage extends React.Component {
                 <SideIconBar/>
                 <Grid
                     container
-                    direction="row"
+                    direction="column"
                     justify="flex-start"
-                    alignItems="center"
+                    alignItems="flex-start"
                     className="main-container"
                 >
-                    <Grid item xs={12}>
-                        <TopProfileBar />
-                    </Grid>
-
+                    <TopProfileBarComponent/>
+                    <MetricChart />
                 </Grid>
             </div>
         );

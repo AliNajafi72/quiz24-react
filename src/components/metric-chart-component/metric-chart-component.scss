@@ -1,0 +1,14 @@
+.metric-chart-main-container {
+  padding: 10px;
+}
+
+.metric-chart-inner-container {
+  background-color: #1F2530;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@font-face {
+  font-family: 'iransans-medium';
+  src: local('iransans-medium'), url(./font/iransans-medium.woff) format('woff');
+}
